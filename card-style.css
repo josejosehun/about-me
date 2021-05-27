@@ -14,7 +14,7 @@ html { /* Settings for sticky footer. */
 
 body{ /* Background properties originally were together in "background" property but I changed it for visibility in Safari. */
   background-color: #40E0D0; /* If the background image is unavailable, turquoise background color will work. */
-  background-image: url(assets/images/card-background-image.jpg);
+  background-image: url(assets/images/coding-image.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
