@@ -13,7 +13,7 @@ html { /* Settings for sticky footer. */
 }
 
 body{ /* Background properties originally were together in "background" property but I changed it for visibility in Safari. */
-  background-color: #40E0D0; /* If the background image is unavailable, turquoise background color will work. */
+  background-color:lightgreen; /* If the background image is unavailable, lightgreen background color will work. */
   background-image: url(assets/images/coding-image.jpg);
   background-position: center;
   background-size: cover;
@@ -117,6 +117,10 @@ main {
   text-align: center;
 }
 
+.fa-map-marker {
+  color: darkgreen;
+}
+
 .links {
   float: left;
   margin-top: -42%; /* Following the top margin of the profile photo. */
@@ -137,7 +141,7 @@ main {
 
 .links a,
 .other-icons {
-  color: blue;
+  color: darkgreen;
 }
 
 .social-icons-container {
@@ -176,7 +180,7 @@ main {
   border: 1px solid grey;
   border-radius: 5px;
   box-shadow: 10px 10px 80px hsla(0, 0%, 0%, .8);
-  color: rgb(0,50,100); /* Original color was white but on small devices there is a problem with visibility of the text, so color is changed for small devices. */
+  color: darkolivegreen; /* Original color was white but on small devices there is a problem with visibility of the text, so color is changed for small devices. */
   font-size: 1rem;
   font-style: italic;
   line-height: 1.4;
@@ -192,7 +196,7 @@ main {
 /* == FOOTER SETTINGS == */
 
 footer {
-  background-color: hsla(0, 0%, 100%, .2);
+  background-color: hsla(0, 0%, 100%, .5);
   bottom: 0; /* Setting for sticky footer. */
   color: green;
   font-size: .8rem;
@@ -205,12 +209,15 @@ footer {
 
 /* == HOVER SETTINGS == */
 
-.profile-photo:hover {
-  transform: scale(1.1, 1.1); /* Specifying hover standing of the profile photo. */
+.profile-photo:hover { /* Specifying hover standing of the profile photo. */
+  transition-duration: 1s;
+  transform: rotate(360deg);
 }
 
-a:hover {
-  color: darkblue; /* Changing the color of the links when mouse hovers. */
+a:hover,
+.fa-map-marker:hover,
+.non-links:hover {
+  color: coral; /* Changing the color of some elements when mouse hovers. */
 }
 
 /* SETTINGS FOR VARIOUS MOBILE-WIDTH */
@@ -345,7 +352,7 @@ a:hover {
   }
   
   .advise {
-    color: rgb(255,255,255);
+    color: darkolivegreen;
     margin: 0 auto 5vh;
     width: 75vw;
   }
